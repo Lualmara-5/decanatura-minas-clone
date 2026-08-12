@@ -1,6 +1,10 @@
 @import url("./header.css");
 @import url("./header-responsive.css");
 
+@import url("./layout.css");
+
+@import url("./sidebar.css");
+
 /* Fuente Ancizar */
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:wght@400;500;600;700;800&display=swap');
 
