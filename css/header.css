@@ -1,0 +1,451 @@
+/* Variables del header */
+
+:root {
+    --header-logo-width: 254px;
+    --header-bg: #2b2b2c;
+    --search-bg: #aaa9a8;
+    --yellow: #f5b400;
+}
+
+/* Header principal */
+
+.site-header {
+    position: relative;
+    width: 100%;
+    height: 88px;
+    background: var(--header-bg);
+    color: white;
+    border-bottom: 4px solid var(--yellow);
+}
+
+
+/* Logo de la Universidad */
+
+.unal-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--header-logo-width);
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--header-bg);
+    z-index: 10;
+}
+
+.unal-logo img {
+    width: 155px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Barra superior */
+
+.topbar {
+    position: absolute;
+    top: 0;
+    left: var(--header-logo-width);
+    right: 0;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    background: var(--header-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* Ubicación */
+
+.site-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--yellow);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.site-location i {
+    font-size: 20px;
+}
+
+
+/* Enlaces superiores */
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    height: 100%;
+}
+
+.topbar-right > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.topbar-right > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--yellow);
+    transform: translateX(-50%);
+    transition: width 0.2s ease;
+}
+
+.topbar-right > a:hover {
+    color: var(--yellow);
+}
+
+.topbar-right > a:hover::after {
+    width: 100%;
+}
+
+
+/* Redes sociales */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icon i {
+    position: absolute;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.social-icon .icon-fill {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.social-icon:hover .icon-line {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.social-icon:hover .icon-fill {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.x-icon:hover {
+    color: #000000;
+}
+
+.facebook-icon:hover {
+    color: #1877f2;
+}
+
+
+/* Selector de idioma */
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.language i {
+    font-size: 17px;
+    color: var(--yellow);
+}
+
+
+/* Navegación principal */
+
+.navbar {
+    position: absolute;
+    left: var(--header-logo-width);
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    background: var(--header-bg);
+}
+
+
+/* Menús principales */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+}
+
+
+/* Botón del dropdown */
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    height: 55px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+
+/* Flecha del dropdown */
+
+.dropdown-toggle i {
+    font-size: 18px;
+    color: var(--yellow);
+    transition: transform 0.2s ease;
+}
+
+
+/* Hover del botón */
+
+.dropdown-toggle:hover {
+    color: var(--yellow);
+}
+
+
+/* Dropdown activo */
+
+.dropdown.active .dropdown-toggle {
+    color: var(--yellow);
+}
+
+.dropdown.active .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+
+/* Menú desplegable */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    background: var(--header-bg);
+    border-top: 2px solid var(--yellow);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
+    z-index: 100;
+}
+
+
+/* Mostrar dropdown activo */
+
+.dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* Opciones del dropdown */
+
+.dropdown-menu a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 6px 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* Indicador amarillo de cada opción */
+
+.dropdown-menu a::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    width: 3px;
+    height: 0;
+    background: var(--yellow);
+    transition: height 0.2s ease;
+}
+
+
+/* Hover de las opciones */
+
+.dropdown-menu a:hover {
+    color: var(--yellow);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.dropdown-menu a:hover::before {
+    height: 18px;
+}
+
+
+/* Enlace normal del navbar */
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+}
+
+
+/* Elementos del lado derecho */
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* Buscador */
+
+.search-box {
+    width: 235px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 11px;
+    background: var(--search-bg);
+    border: none;
+    border-radius: 8px;
+    transition:
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.search-box:focus-within {
+    background: #b5b4b3;
+    box-shadow: 0 0 0 2px rgba(245, 180, 0, 0.35);
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-size: 13px;
+}
+
+.search-box input::placeholder {
+    color: #555;
+}
+
+.search-box i {
+    font-size: 21px;
+    color: #333;
+}
+
+
+/* Selector de sedes */
+
+.sedes-dropdown .dropdown-menu {
+    right: 0;
+    left: auto;
+    min-width: 150px;
+}
+
+.sedes {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.sedes i {
+    font-size: 18px;
+    color: var(--yellow);
+}
+
+.sedes:hover {
+    color: var(--yellow);
+}
+
+
+/* Escudo de Colombia */
+
+.colombia-seal {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colombia-seal img {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
