@@ -226,7 +226,7 @@
     background: transparent;
     color: white;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     transition: color 0.2s ease;
@@ -419,7 +419,7 @@
     gap: 1px;
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     transition: color 0.2s ease;
 }
@@ -456,3 +456,4 @@
 .navbar-mobile {
     display: none;
 }
+
