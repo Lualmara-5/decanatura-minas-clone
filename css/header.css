@@ -449,3 +449,10 @@
     height: 43px;
     object-fit: contain;
 }
+
+/* Elementos Exclusivos de Mobile*/
+
+.mobile-header,
+.navbar-mobile {
+    display: none;
+}

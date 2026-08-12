@@ -1,0 +1,366 @@
+ /* Header responsive */
+
+.mobile-header {
+    display: none;
+}
+
+
+/* Header principal */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    /* Header móvil */
+
+    .mobile-header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding: 0 18px;
+        background: var(--header-bg);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+
+    /* Botón del menú */
+
+    .mobile-menu-toggle {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+
+    /* Logo móvil */
+
+    .mobile-logo {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-logo img {
+        width: 130px;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+    /* Selector de idioma */
+
+    .mobile-language {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-right: 12px;
+        padding: 6px 8px;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 4px;
+        cursor: pointer;
+        transition:
+            color 0.2s ease,
+            border-color 0.2s ease,
+            background 0.2s ease;
+    }
+
+    .mobile-language i {
+        font-size: 18px;
+        color: var(--yellow);
+    }
+
+    .mobile-language:hover {
+        color: var(--yellow);
+        border-color: var(--yellow);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+
+    /* Escudo de Colombia móvil */
+
+    .mobile-colombia-seal {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-colombia-seal img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+
+    /* Elementos exclusivos de escritorio */
+
+    .unal-logo,
+    .topbar {
+        display: none !important;
+    }
+
+
+    /* Navegación principal */
+
+    .navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        background: var(--header-bg);
+    }
+
+    .site-header.mobile-menu-open .navbar {
+        display: flex;
+    }
+
+
+    /* Menús principales */
+
+    .nav-links {
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+    }
+
+    .nav-links .dropdown {
+        width: 100%;
+    }
+
+
+    /* Botones de los menús */
+
+    .nav-links .dropdown-toggle {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .nav-links .dropdown-toggle i {
+        font-size: 20px;
+    }
+
+    .nav-links .dropdown.active .dropdown-toggle {
+        color: var(--yellow);
+    }
+
+
+    /* Menús desplegables */
+
+    .nav-links .dropdown-menu {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        display: none;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        border-top: none;
+        box-shadow: none;
+    }
+
+    .nav-links .dropdown.active .dropdown-menu {
+        display: flex;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+
+    /* Opciones del dropdown */
+
+    .nav-links .dropdown-menu a {
+        min-height: 42px;
+        padding: 6px 32px;
+        font-size: 13px;
+    }
+
+    .nav-links .dropdown-menu a::before {
+        left: 20px;
+    }
+
+
+    /* Enlace normal del navbar */
+
+    .nav-links .nav-link {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+
+    /* Elementos del lado derecho */
+
+    .navbar-right {
+        order: 3;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+    }
+
+
+    /* Selector de sedes */
+
+    .navbar-right .sedes-dropdown {
+        width: 100%;
+    }
+
+    .navbar-right .sedes-dropdown .dropdown-toggle {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .navbar-right .sedes-dropdown .dropdown-menu {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        display: none;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        border-top: none;
+        box-shadow: none;
+    }
+
+    .navbar-right .sedes-dropdown.active .dropdown-menu {
+        display: flex;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .navbar-right .sedes-dropdown .dropdown-menu a {
+        min-height: 42px;
+        padding: 6px 32px;
+        font-size: 13px;
+    }
+
+    .navbar-right .sedes-dropdown .dropdown-menu a::before {
+        left: 20px;
+    }
+
+
+    /* Buscador desktop */
+
+    .navbar-right .search-box {
+        display: none;
+    }
+
+
+    /* Escudo de Colombia desktop */
+
+    .navbar-right .colombia-seal {
+        display: none;
+    }
+
+
+    /* Contenido adicional móvil */
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    .site-header.mobile-menu-open .navbar-mobile {
+        display: flex;
+        flex-direction: column;
+        background: var(--header-bg);
+    }
+
+
+    /* Enlaces rápidos */
+
+    .mobile-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-links a {
+        height: 42px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+
+    /* Redes sociales */
+
+    .mobile-socials {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .mobile-socials .social-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 8px;
+    }
+
+
+    /* Buscador móvil */
+
+    .mobile-search {
+        padding: 22px 16px 20px;
+    }
+
+    .mobile-search .search-box {
+        width: 100%;
+        height: 44px;
+        border-radius: 8px;
+    }
+}

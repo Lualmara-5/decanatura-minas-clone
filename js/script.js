@@ -24,3 +24,14 @@ document.addEventListener("click", () => {
     dropdown.classList.remove("active");
   });
 });
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+const siteHeader = document.querySelector(".site-header");
+
+mobileMenuToggle.addEventListener("click", () => {
+  siteHeader.classList.toggle("mobile-menu-open");
+});
