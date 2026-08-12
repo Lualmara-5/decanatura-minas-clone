@@ -47,13 +47,8 @@
         <img src="img/escudoUnal.png" alt="Universidad Nacional de Colombia" />
       </div>
 
-      <!-- Barra superior -->
-      <div class="topbar">
-        <div class="site-location">
-          <i class="ri-map-pin-line"></i>
-          <span>minas.medellin.unal.edu.co</span>
-        </div>
-
+      <!-- FILA 1: enlaces superiores (Aspirantes, Estudiantes, redes, idioma) -->
+      <div class="toplinks-row">
         <div class="topbar-right">
           <a href="#">Aspirantes</a>
           <a href="#">Estudiantes</a>
@@ -79,7 +74,20 @@
         </div>
       </div>
 
-      <!-- Navegación principal -->
+      <!-- FILA 2: ubicación + buscador -->
+      <div class="topbar">
+        <div class="site-location">
+          <i class="ri-map-pin-line"></i>
+          <span>minas.medellin.unal.edu.co</span>
+        </div>
+
+        <div class="search-box desktop-search">
+          <input type="text" placeholder="Buscar en el sitio" />
+          <i class="ri-search-line"></i>
+        </div>
+      </div>
+
+      <!-- FILA 3: menús desplegables + sedes -->
       <nav class="navbar">
         <!-- Menús principales -->
         <div class="nav-links">
@@ -156,12 +164,6 @@
 
         <!-- Elementos derechos de la navegación -->
         <div class="navbar-right">
-          <!-- Buscador -->
-          <div class="search-box desktop-search">
-            <input type="text" placeholder="Buscar en el sitio" />
-            <i class="ri-search-line"></i>
-          </div>
-
           <!-- Sedes -->
           <div class="dropdown sedes-dropdown">
             <button class="dropdown-toggle sedes" type="button">
@@ -180,13 +182,13 @@
               <a href="#">Tumaco</a>
             </div>
           </div>
-
-          <!-- Escudo de Colombia -->
-          <div class="colombia-seal">
-            <img src="img/sealColombia.png" alt="Gobierno de Colombia" />
-          </div>
         </div>
       </nav>
+
+      <!-- Escudo de Colombia: partido entre fila 2 y fila 3 -->
+      <div class="colombia-seal">
+        <img src="img/sealColombia.png" alt="Gobierno de Colombia" />
+      </div>
 
       <!-- Contenido adicional móvil -->
       <div class="navbar-mobile">

@@ -1,4 +1,4 @@
- /* Header responsive */
+/* Header responsive */
 
 .mobile-header {
     display: none;
@@ -113,7 +113,9 @@
     /* Elementos exclusivos de escritorio */
 
     .unal-logo,
-    .topbar {
+    .topbar,
+    .toplinks-row,
+    .colombia-seal {
         display: none !important;
     }
 
@@ -281,20 +283,6 @@
 
     .navbar-right .sedes-dropdown .dropdown-menu a::before {
         left: 20px;
-    }
-
-
-    /* Buscador desktop */
-
-    .navbar-right .search-box {
-        display: none;
-    }
-
-
-    /* Escudo de Colombia desktop */
-
-    .navbar-right .colombia-seal {
-        display: none;
     }
 
 

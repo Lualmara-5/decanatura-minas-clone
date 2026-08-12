@@ -5,6 +5,11 @@
     --header-bg: #2b2b2c;
     --search-bg: #aaa9a8;
     --yellow: #f5b400;
+
+    /* Altura de cada una de las 3 filas */
+    --row1-height: 30px;
+    --row2-height: 40px;
+    --row3-height: 50px;
 }
 
 /* Header principal */
@@ -12,21 +17,21 @@
 .site-header {
     position: relative;
     width: 100%;
-    height: 88px;
+    height: calc(var(--row1-height) + var(--row2-height) + var(--row3-height));
     background: var(--header-bg);
     color: white;
     border-bottom: 4px solid var(--yellow);
 }
 
 
-/* Logo de la Universidad */
+/* Logo de la Universidad (ocupa toda la altura, a la izquierda) */
 
 .unal-logo {
     position: absolute;
     top: 0;
     left: 0;
     width: var(--header-logo-width);
-    height: 84px;
+    height: calc(100% - 4px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,42 +40,25 @@
 }
 
 .unal-logo img {
-    width: 155px;
+    width: 175px;
     height: auto;
     object-fit: contain;
 }
 
 
-/* Barra superior */
+/* FILA 1: enlaces superiores, pegados a la derecha */
 
-.topbar {
+.toplinks-row {
     position: absolute;
     top: 0;
     left: var(--header-logo-width);
     right: 0;
-    height: 38px;
+    height: var(--row1-height);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 28px;
     background: var(--header-bg);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-
-/* Ubicación */
-
-.site-location {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    color: var(--yellow);
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.site-location i {
-    font-size: 20px;
 }
 
 
@@ -182,18 +170,52 @@
 }
 
 
-/* Navegación principal */
+/* FILA 2: ubicación + buscador */
+
+.topbar {
+    position: absolute;
+    top: var(--row1-height);
+    left: var(--header-logo-width);
+    right: 0;
+    height: var(--row2-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-right ampliado para dejar espacio al escudo de Colombia */
+    padding: 0 90px 0 28px;
+    background: var(--header-bg);
+}
+
+
+/* Ubicación */
+
+.site-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--yellow);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.site-location i {
+    font-size: 20px;
+}
+
+
+/* FILA 3: menús desplegables + sedes */
 
 .navbar {
     position: absolute;
     left: var(--header-logo-width);
     right: 0;
     bottom: 0;
-    height: 50px;
+    height: var(--row3-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 28px;
+    /* padding-right ampliado para dejar espacio al escudo de Colombia */
+    padding: 0 90px 0 28px;
     background: var(--header-bg);
 }
 
@@ -355,7 +377,7 @@
 }
 
 
-/* Elementos del lado derecho */
+/* Elementos del lado derecho del navbar (sedes) */
 
 .navbar-right {
     display: flex;
@@ -368,7 +390,7 @@
 
 .search-box {
     width: 235px;
-    height: 36px;
+    height: 32px;
     display: flex;
     align-items: center;
     padding: 0 11px;
@@ -433,20 +455,23 @@
     color: var(--yellow);
 }
 
-
-/* Escudo de Colombia */
-
 .colombia-seal {
+    position: absolute;
+    top: calc(
+        var(--row1-height) + var(--row2-height) - 21.5px
+    ); 
+    right: 28px;
     width: 43px;
     height: 43px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 15;
 }
 
 .colombia-seal img {
-    width: 43px;
-    height: 43px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
@@ -456,4 +481,3 @@
 .navbar-mobile {
     display: none;
 }
-
