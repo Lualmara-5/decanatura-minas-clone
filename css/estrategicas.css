@@ -1,0 +1,144 @@
+/* sección estratégica */
+.strategy {
+  padding: 32px 0 64px;
+  background: var(--color-bg-section);
+}
+
+/* contenedor */
+.strategy__inner {
+  padding: 48px;
+  border: 1px solid var(--color-border);
+  border-radius: 28px;
+  background: var(--color-white);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+/* encabezado */
+.strategy__header {
+  margin-bottom: 32px;
+}
+
+.strategy__title {
+  margin: 8px 0 12px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.strategy__title::after {
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 4px;
+  background: var(--color-yellow);
+  content: "";
+}
+
+.strategy__subtitle {
+  max-width: none;
+  color: var(--color-text-light);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* grid */
+.strategy__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+/* tarjetas */
+.strategy-card {
+  position: relative;
+  padding: 26px 20px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.strategy-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+/* número */
+.strategy-card__number {
+  position: absolute;
+  top: 28px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-yellow);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* icono y título */
+.strategy-card__heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 12px;
+  margin-bottom: 18px;
+}
+
+.strategy-card__icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--color-yellow-softer);
+  color: var(--color-yellow);
+  font-size: 23px;
+}
+
+.strategy-card__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* texto */
+.strategy-card__text {
+  margin: 0;
+  color: var(--color-text-light);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  .strategy__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .strategy__inner {
+    padding: 32px 24px;
+  }
+
+  .strategy__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .strategy__grid {
+    grid-template-columns: 1fr;
+  }
+}
