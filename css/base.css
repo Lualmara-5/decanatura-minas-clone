@@ -1,0 +1,60 @@
+:root {
+  --color-yellow: #f5b400;
+  --color-yellow-soft: #fdecc4;
+  --color-yellow-softer: #fff6e2;
+
+  --color-dark: #1c1c1c;
+  --color-text: #4a4a4a;
+  --color-text-light: #6f6f6f;
+  --color-border: #e7e5e0;
+  --color-bg-section: #f7f6f3;
+  --color-white: #ffffff;
+
+  --font-heading: "Ancizar Sans", Arial, Helvetica, sans-serif;
+  --font-body: "Ancizar Sans", Arial, Helvetica, sans-serif;
+
+  --container-width: 1380px;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+}
+
+body {
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--color-dark);
+  font-family: var(--font-heading);
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/*Nuestra ruta de trabajo*/
+.eyebrow {
+  display: inline-block;
+  color: var(--color-yellow);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

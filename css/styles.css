@@ -1,9 +1,11 @@
 @import url("./header.css");
 @import url("./header-responsive.css");
 
-@import url("./layout.css");
-
-@import url("./sidebar.css");
+@import url("./base.css");
+@import url("./hero.css");
+@import url("./estrategicas.css");
+@import url("./compromiso.css");
+@import url("./contacto.css");
 
 /* Fuente Ancizar */
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:wght@400;500;600;700;800&display=swap');

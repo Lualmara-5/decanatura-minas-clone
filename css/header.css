@@ -1,7 +1,7 @@
 /* Variables del header */
 
 :root {
-    --header-logo-width: 254px;
+    --header-logo-width: 200px;
     --header-bg: #2b2b2c;
     --search-bg: #aaa9a8;
     --yellow: #f5b400;
@@ -29,7 +29,7 @@
 .unal-logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     width: var(--header-logo-width);
     height: calc(100% - 4px);
     display: flex;
