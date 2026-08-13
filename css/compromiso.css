@@ -81,7 +81,7 @@
 
 @media (max-width: 780px) {
   .commitment {
-    padding: 32px 0 48px;
+    padding: 24px 0;
   }
 
   .commitment__box {
@@ -90,10 +90,31 @@
   }
 
   .commitment__content {
-    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 14px 24px 28px 24px;
+  }
+
+  .commitment__icon {
+    display: none;
   }
 
   .commitment__media {
     height: 220px;
+  }
+
+  .commitment__media img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .commitment__media::before {
+    display: none;
   }
 }

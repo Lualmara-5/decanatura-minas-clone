@@ -1,0 +1,168 @@
+/* =========================================================
+   contacto.css
+   Barra "Información de contacto"
+   ========================================================= */
+
+.contact-info {
+  padding: 0 0 64px;
+}
+
+
+/* ---------- Contenedor ---------- */
+
+.contact-info__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 26px 8px;
+
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-yellow);
+  border-radius: 28px;
+
+  background: var(--color-white);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ---------- Título ---------- */
+
+.contact-info__title {
+  grid-column: 1 / -1;
+
+  padding: 0 26px;
+  margin: 0 0 22px;
+
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.contact-info__title::after {
+  display: block;
+
+  width: 42px;
+  height: 3px;
+
+  margin-top: 10px;
+
+  border-radius: 4px;
+
+  background: var(--color-yellow);
+
+  content: "";
+}
+
+
+/* ---------- Items ---------- */
+
+.contact-info__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 0 26px;
+
+  border-left: 1px solid var(--color-border);
+}
+
+.contact-info__item:first-of-type {
+  border-left: none;
+}
+
+
+/* ---------- Iconos ---------- */
+
+.contact-info__icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  background: var(--color-bg-section);
+
+  color: var(--color-dark);
+  font-size: 17px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+/* ---------- Hover iconos ---------- */
+
+.contact-info__item:hover .contact-info__icon {
+  border-color: var(--color-yellow);
+  background: var(--color-yellow-softer);
+  color: var(--color-yellow);
+}
+
+
+/* ---------- Texto ---------- */
+
+.contact-info__label {
+  margin: 0 0 4px;
+
+  color: var(--color-dark);
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.contact-info__value {
+  margin: 0;
+
+  color: var(--color-text-light);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ---------- Correo ---------- */
+
+.contact-info__value a {
+  color: var(--color-yellow);
+  text-decoration: none;
+}
+
+.contact-info__value a:hover {
+  text-decoration: underline;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 780px) {
+  .contact-info {
+    padding: 24px 0;
+  }
+
+  .contact-info__box {
+    grid-template-columns: 1fr;
+
+    padding: 24px 0;
+  }
+
+  .contact-info__title {
+    padding: 0 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact-info__item {
+    padding: 18px 24px;
+
+    border-top: 1px solid var(--color-border);
+    border-left: none;
+  }
+
+  .contact-info__item:first-of-type {
+    border-top: none;
+  }
+}
