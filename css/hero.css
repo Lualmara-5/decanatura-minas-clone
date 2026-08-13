@@ -1,6 +1,6 @@
 /* hero */
 .hero {
-  padding: 24px 0 56px 72px;
+  padding: 24px 0 64px 78px;
 }
 
 .hero .container {
@@ -219,6 +219,11 @@
 
   .hero__stats {
     grid-template-columns: 1fr;
+  }
+
+  .hero-stat + .hero-stat {
+    border-left: 0;
+    border-top: 1px solid var(--color-border);
   }
 
   .hero-visual {

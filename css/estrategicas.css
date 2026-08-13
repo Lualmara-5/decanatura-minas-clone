@@ -1,6 +1,6 @@
-/* sección estratégica */
+/* sección estratégica 32*/
 .strategy {
-  padding: 32px 0 64px;
+  padding: 0px 0 64px 0;
   background: var(--color-bg-section);
 }
 
