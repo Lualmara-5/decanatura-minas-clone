@@ -8,7 +8,7 @@ El objetivo de la propuesta es **aprovechar el scroll como elemento narrativo**,
 
 🛠 **Tecnologías utilizadas:** HTML, CSS y JavaScript.
 
-🌐 **Despliegue:** 
+🌐 **Despliegue:** https://lualmara-5.github.io/decanatura-minas-home-redesign/
 
 ---
 
@@ -45,7 +45,7 @@ En esta propuesta se rediseña **exclusivamente la sección “Decanatura Actual
 
 ## Diseño original
 
-![Antes](./assets/antes.png)
+![Antes](./img-readme/antes_decanatura_actual.png)
 
 ### Observaciones
 
@@ -63,7 +63,7 @@ En conjunto, la página cumple su función informativa, pero la experiencia se p
 
 ## Propuesta de rediseño
 
-![Después](./assets/despues.png)
+![Después](./img-readme/despues_decanatura_actual.png)
 
 ---
 
@@ -142,9 +142,9 @@ Con este rediseño se busca una interfaz:
 
 ## Comparación visual
 
-| Antes | Después |
-|------|----------|
-| ![Antes](./assets/antes.png) | ![Después](./assets/despues.png) |
+| Antes                                              | Después                                                |
+| -------------------------------------------------- | ------------------------------------------------------ |
+| ![Antes](./img-readme/antes_decanatura_actual.png) | ![Después](./img-readme/despues_decanatura_actual.png) |
 
 ---
 
