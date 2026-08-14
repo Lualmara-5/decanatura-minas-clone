@@ -1,0 +1,424 @@
+/* ==============================
+   RESET
+============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+
+/* ==============================
+   CONTENIDO DE PRUEBA
+============================== */
+
+.page-content {
+  min-height: 70vh;
+  padding: 80px 40px;
+  background: #fff;
+}
+
+.page-content h1 {
+  margin-bottom: 20px;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+  width: 100%;
+  background: #3f4347;
+  color: #e8e8e8;
+}
+
+
+/* ==============================
+   FOOTER TOP
+============================== */
+
+.footer__top {
+  display: flex;
+  align-items: stretch;
+
+  min-height: 56px;
+
+  background: #292d30;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__top-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 28px;
+
+  color: #e5e5e5;
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.footer__top-item:hover {
+  background: #353a3e;
+  color: #fff;
+}
+
+
+/* Bloque amarillo de la referencia */
+
+.footer__top-item--active {
+  position: relative;
+
+  width: 72px;
+  padding: 0;
+
+  justify-content: center;
+
+  background: #f5b900;
+  color: #292d30;
+}
+
+.footer__top-item--active span:last-child {
+  display: none;
+}
+
+.footer__top-item--active:hover {
+  background: #f5b900;
+  color: #292d30;
+}
+
+
+/* ==============================
+   ICONOS SUPERIORES
+============================== */
+
+.footer__icon {
+  width: 23px;
+  height: 23px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+
+  font-size: 12px;
+  line-height: 1;
+}
+
+.footer__top-item--active .footer__icon {
+  width: 27px;
+  height: 27px;
+
+  border-color: rgba(0, 0, 0, 0.35);
+
+  font-size: 15px;
+}
+
+
+/* ==============================
+   FOOTER MAIN
+============================== */
+
+.footer__main {
+  display: grid;
+
+  grid-template-columns:
+    0.95fr
+    1fr
+    1.05fr
+    1fr
+    1.55fr
+    1.25fr
+    1.1fr;
+
+  padding: 25px 38px 30px;
+
+  column-gap: 0;
+}
+
+
+/* ==============================
+   COLUMNAS
+============================== */
+
+.footer__column {
+  min-width: 0;
+
+  padding: 0 22px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer__column:first-child {
+  padding-left: 2px;
+}
+
+.footer__column h3 {
+  margin-bottom: 10px;
+
+  color: #eeeeee;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.footer__column a,
+.footer__column p {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #d4d4d4;
+
+  font-size: 10px;
+  line-height: 1.35;
+
+  text-decoration: none;
+}
+
+.footer__column a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/* ==============================
+   CONTACTO
+============================== */
+
+.footer__contact p {
+  margin-bottom: 5px;
+}
+
+
+/* ==============================
+   INFORMACIÓN LEGAL
+============================== */
+
+.footer__legal p,
+.footer__legal a {
+  margin-bottom: 8px;
+}
+
+.footer__legal p:first-child {
+  margin-bottom: 13px;
+
+  color: #eeeeee;
+}
+
+
+/* ==============================
+   BRANDS / LOGOS SIMULADOS
+============================== */
+
+.footer__brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  padding-left: 22px;
+}
+
+
+/* orgullo un */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #e6e6e6;
+}
+
+.brand__text {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.brand__circle {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #d8d8d8;
+  border-radius: 50%;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* Logo secundario */
+
+.brand__secondary {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #d8d8d8;
+  border-radius: 50%;
+
+  color: #ddd;
+
+  font-size: 11px;
+  font-weight: bold;
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 1050px) {
+
+  .footer__top-item {
+    padding: 0 16px;
+    font-size: 11px;
+  }
+
+  .footer__main {
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    row-gap: 25px;
+
+    padding: 25px;
+  }
+
+  .footer__column {
+    min-height: 120px;
+  }
+
+  .footer__brands {
+    align-items: flex-start;
+    padding-left: 22px;
+  }
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 700px) {
+
+  .footer__top {
+    flex-wrap: wrap;
+  }
+
+  .footer__top-item {
+    flex: 1 1 50%;
+
+    min-height: 48px;
+
+    padding: 0 12px;
+
+    justify-content: center;
+
+    font-size: 10px;
+  }
+
+  .footer__top-item--active {
+    width: 50%;
+  }
+
+
+  .footer__main {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 25px 18px;
+  }
+
+
+  .footer__column {
+    padding: 0 15px;
+
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    padding-bottom: 20px;
+  }
+
+  .footer__column:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .footer__column:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+
+  .footer__brands {
+    grid-column: 1 / -1;
+
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 15px 0 0;
+  }
+}
+
+
+/* ==============================
+   MOBILE PEQUEÑO
+============================== */
+
+@media (max-width: 450px) {
+
+  .footer__top-item {
+    flex: 1 1 100%;
+  }
+
+  .footer__top-item--active {
+    width: 100%;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__column,
+  .footer__column:nth-child(odd) {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .footer__column:last-of-type {
+    border-bottom: none;
+  }
+
+  .footer__brands {
+    flex-wrap: wrap;
+  }
+}
