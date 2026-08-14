@@ -36,26 +36,3 @@ mobileMenuToggle.addEventListener("click", () => {
   // Abre o cierra el menú móvil
   siteHeader.classList.toggle("mobile-menu-open");
 });
-
-/* Navegación rápida */
-
-const quickNav = document.querySelector(".quick-nav");
-
-const leftButton = document.querySelector(".quick-nav__arrow--left");
-const rightButton = document.querySelector(".quick-nav__arrow--right");
-
-// Desplaza la navegación hacia la derecha
-rightButton.addEventListener("click", () => {
-  quickNav.scrollBy({
-    left: 220,
-    behavior: "smooth",
-  });
-});
-
-// Desplaza la navegación hacia la izquierda
-leftButton.addEventListener("click", () => {
-  quickNav.scrollBy({
-    left: -220,
-    behavior: "smooth",
-  });
-});

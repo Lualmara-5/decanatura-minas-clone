@@ -201,7 +201,6 @@
 ================================= */
 
 @media (max-width: 700px) {
-
   .quick-nav-wrapper {
     overflow: hidden;
   }
@@ -217,16 +216,16 @@
 
     scrollbar-width: none;
 
-    padding: 0 28px;
+    padding: 0;
   }
 
   .quick-nav::-webkit-scrollbar {
     display: none;
   }
 
-
   .quick-nav__item {
     flex: 0 0 110px;
+    box-sizing: border-box;
 
     min-height: 70px;
 
@@ -245,13 +244,11 @@
     font-size: 8px;
   }
 
-
-  /* Flechas */
-
   .quick-nav__arrow {
     display: flex;
   }
 }
+
 
 
 /* =================================
@@ -259,21 +256,14 @@
 ================================= */
 
 @media (max-width: 450px) {
-
-  .quick-nav {
-    padding: 0 26px;
-  }
-
   .quick-nav__item {
     flex-basis: 105px;
-
     min-height: 68px;
   }
 
   .quick-nav__arrow {
     width: 28px;
     height: 28px;
-
     font-size: 19px;
   }
 }
