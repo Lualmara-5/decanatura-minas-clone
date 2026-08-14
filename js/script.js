@@ -1,3 +1,5 @@
+/* Dropdowns */
+
 const dropdowns = document.querySelectorAll(".dropdown");
 
 dropdowns.forEach((dropdown) => {
@@ -6,41 +8,43 @@ dropdowns.forEach((dropdown) => {
   button.addEventListener("click", (event) => {
     event.stopPropagation();
 
-    // Cerrar los demás
+    // Cierra los demás dropdowns
     dropdowns.forEach((otherDropdown) => {
       if (otherDropdown !== dropdown) {
         otherDropdown.classList.remove("active");
       }
     });
 
-    // Abrir / cerrar actual
+    // Abre o cierra el dropdown actual
     dropdown.classList.toggle("active");
   });
 });
 
-// Click fuera de los menús
+// Cierra los dropdowns al hacer clic fuera
 document.addEventListener("click", () => {
   dropdowns.forEach((dropdown) => {
     dropdown.classList.remove("active");
   });
 });
 
-/* =========================================
-   MOBILE MENU
-========================================= */
+/* Menú móvil */
 
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
 const siteHeader = document.querySelector(".site-header");
 
 mobileMenuToggle.addEventListener("click", () => {
+  // Abre o cierra el menú móvil
   siteHeader.classList.toggle("mobile-menu-open");
 });
+
+/* Navegación rápida */
 
 const quickNav = document.querySelector(".quick-nav");
 
 const leftButton = document.querySelector(".quick-nav__arrow--left");
 const rightButton = document.querySelector(".quick-nav__arrow--right");
 
+// Desplaza la navegación hacia la derecha
 rightButton.addEventListener("click", () => {
   quickNav.scrollBy({
     left: 220,
@@ -48,6 +52,7 @@ rightButton.addEventListener("click", () => {
   });
 });
 
+// Desplaza la navegación hacia la izquierda
 leftButton.addEventListener("click", () => {
   quickNav.scrollBy({
     left: -220,
