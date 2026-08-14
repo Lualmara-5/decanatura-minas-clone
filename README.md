@@ -153,3 +153,156 @@ Con este rediseño se busca una interfaz:
 La propuesta **no modifica la identidad institucional de la Universidad Nacional de Colombia**; por el contrario, reorganiza el contenido existente mediante una jerarquía visual más clara, componentes reutilizables y una experiencia de navegación centrada en el usuario.
 
 El resultado es una home que comunica la misma información estratégica de una manera **más eficiente, contemporánea y alineada con patrones actuales de diseño web institucional**.
+
+---
+
+# 2. Información General
+
+## Diseño original
+
+![Diseño original - Información General](./img-readme/antes_informacion_general.png)
+
+### Observaciones
+
+La versión original presenta la información de la Decanatura principalmente mediante **bloques extensos de texto y listas consecutivas**.
+
+Aunque la información es completa y cumple con su propósito institucional, se identifican algunas oportunidades de mejora desde el punto de vista de la experiencia de usuario:
+
+* La página tiene una **alta densidad de texto**, lo que dificulta realizar una lectura rápida.
+* Las funciones de la Decanatura se presentan como una **lista extensa y uniforme**, sin una jerarquía visual que permita distinguir fácilmente cada punto.
+* Las diferentes secciones tienen una estructura visual muy similar, haciendo que el contenido se perciba como un único documento continuo.
+* El menú lateral ocupa una parte considerable del espacio disponible y mantiene la atención del usuario sobre la navegación en lugar del contenido principal.
+* La información introductoria no cuenta con un elemento visual que ayude a contextualizar la función de la Decanatura.
+* Los contenidos de carácter institucional, aunque importantes, no están diferenciados visualmente según su propósito.
+
+El principal reto no era reducir la información, sino **hacer que una cantidad considerable de contenido institucional fuera más fácil de recorrer y comprender**.
+
+---
+
+## Propuesta de rediseño
+
+![Rediseño - Información General](./img-readme/despues_informacion_general.png)
+
+La propuesta conserva el contenido institucional de la página, pero modifica su presentación para convertirla en una experiencia más estructurada y visual.
+
+### 1. Introducción con jerarquía visual
+
+La información introductoria ahora se presenta como un **hero de contexto**, acompañado de una imagen representativa de la Facultad.
+
+De esta manera, el usuario puede identificar desde el inicio:
+
+* qué es la Decanatura,
+* cuál es su función principal,
+* y el contexto institucional al que pertenece.
+
+La imagen permite además romper con la presentación exclusivamente textual de la versión original.
+
+---
+
+### 2. Funciones de la Decanatura como tarjetas
+
+Las siete funciones principales dejan de mostrarse como una lista vertical de párrafos y pasan a organizarse mediante **tarjetas independientes distribuidas en dos columnas**.
+
+Cada función cuenta con:
+
+* numeración,
+* iconografía,
+* contenido independiente,
+* y una separación visual clara respecto a las demás.
+
+Esto permite que el usuario pueda **identificar rápidamente una función específica sin tener que recorrer toda la lista**.
+
+La información no se elimina ni se simplifica de manera que pierda su significado institucional; simplemente se reorganiza para facilitar su lectura.
+
+---
+
+### 3. Separación de contenidos
+
+La información ahora se divide en bloques claramente diferenciados:
+
+* Introducción de la Decanatura
+* Funciones de la Decanatura
+* Información sobre el ejercicio de sus funciones
+* Participación institucional
+* Acceso al equipo de trabajo
+
+Esta separación genera una **jerarquía de contenido más clara** y permite que cada sección tenga un propósito visual propio.
+
+---
+
+### 4. "¿Qué hacemos?" como contenido estructurado
+
+La sección **¿Qué hacemos?** mantiene las funciones institucionales descritas en la página original, pero las presenta nuevamente mediante tarjetas numeradas.
+
+Este cambio permite conservar información extensa sin que el usuario perciba la sección como un bloque continuo de texto.
+
+La numeración funciona además como un elemento de orientación visual, facilitando la identificación de cada responsabilidad.
+
+---
+
+### 5. Participación institucional
+
+La información relacionada con la participación de la Decanatura en diferentes comisiones y comités se transforma en **tres tarjetas independientes**.
+
+Esto permite representar visualmente cada espacio de participación:
+
+* Comisión Delegataria de Asuntos Estudiantiles
+* Comité de Investigación y Extensión
+* Comité de Directores(as) de Unidades Académicas Básicas
+
+De esta manera, una información que anteriormente aparecía integrada dentro del contenido textual adquiere una **presencia visual propia**.
+
+---
+
+### 6. Acceso al equipo de trabajo
+
+Al final de la página se mantiene el acceso a **"Nuestro Equipo"**, pero se convierte en un llamado a la acción más visible.
+
+Esto establece una continuidad natural en la navegación:
+
+**Conocer la Decanatura → conocer sus funciones → conocer su participación institucional → conocer a las personas que la conforman.**
+
+---
+
+## ¿Qué se mejoró?
+
+| Antes                                 | Después                                     |
+| ------------------------------------- | ------------------------------------------- |
+| Gran cantidad de texto continuo       | Información dividida en bloques             |
+| Listas extensas                       | Tarjetas independientes                     |
+| Poca diferenciación entre contenidos  | Jerarquía visual por secciones              |
+| Menor presencia de elementos gráficos | Iconografía e imágenes contextualizadas     |
+| Lectura principalmente lineal         | Lectura más escaneable                      |
+| Sidebar con gran protagonismo         | Mayor protagonismo del contenido            |
+| Información presentada como documento | Información presentada como experiencia web |
+
+---
+
+## Comparación visual
+
+| Antes                                              | Después                                                |
+| -------------------------------------------------- | ------------------------------------------------------ |
+| ![Antes](./img-readme/antes_informacion_general.png) | ![Después](./img-readme/despuesinformacion_general.png) |
+
+---
+
+## Resultado esperado
+
+Con este rediseño se busca que una página con una cantidad considerable de información institucional pueda ser **consultada de manera más rápida y organizada**, sin sacrificar el contenido original.
+
+El usuario puede recorrer la página de forma progresiva, identificar las secciones de interés y localizar una función específica con mayor facilidad.
+
+La principal mejora no consiste en reducir el contenido, sino en **transformar la forma en que este contenido se presenta**.
+
+> **De una página predominantemente textual a una experiencia institucional estructurada, visual y orientada al escaneo.**
+
+---
+
+## Consideración de diseño
+
+En esta sección se mantuvo especial cuidado con el contenido institucional, ya que parte de la información corresponde a funciones y responsabilidades establecidas formalmente.
+
+Por esta razón, la propuesta se enfoca principalmente en **la presentación, organización y jerarquía visual del contenido**, evitando modificar su sentido institucional.
+
+Esto permite modernizar la experiencia de usuario sin alterar la información que debe permanecer disponible para consulta.
+
