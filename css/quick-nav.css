@@ -1,0 +1,279 @@
+/* =================================
+   QUICK NAVIGATION
+================================= */
+
+.quick-nav-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #eeeeee;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+.quick-nav {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+
+/* =================================
+   ITEM
+================================= */
+
+.quick-nav__item {
+  position: relative;
+
+  min-height: 78px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  padding: 8px 10px;
+
+  color: #202631;
+  text-decoration: none;
+
+  border-right: 1px solid #eeeeee;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.quick-nav__item:last-child {
+  border-right: none;
+}
+
+
+/* =================================
+   ICON
+================================= */
+
+.quick-nav__item i {
+  font-size: 21px;
+
+  color: #4b5159;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* =================================
+   TEXT
+================================= */
+
+.quick-nav__item span {
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  text-align: center;
+}
+
+
+/* =================================
+   HOVER
+================================= */
+
+.quick-nav__item:hover {
+  background: #fafafa;
+}
+
+.quick-nav__item:hover i {
+  color: #f5b400;
+
+  transform: translateY(-1px);
+}
+
+
+/* =================================
+   ACTIVE
+================================= */
+
+.quick-nav__item--active {
+  color: #e5a900;
+}
+
+.quick-nav__item--active i {
+  color: #e5a900;
+}
+
+.quick-nav__item--active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 3px;
+
+  background: #f5b400;
+}
+
+
+/* =================================
+   ARROWS
+================================= */
+
+.quick-nav__arrow {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+  z-index: 5;
+
+  width: 32px;
+  height: 32px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #343a40;
+
+  font-size: 22px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  transform: translateY(-50%);
+
+  cursor: pointer;
+}
+
+.quick-nav__arrow--left {
+  left: 6px;
+}
+
+.quick-nav__arrow--right {
+  right: 6px;
+}
+
+.quick-nav__arrow:hover {
+  color: #e5a900;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+  .quick-nav__item {
+    min-height: 72px;
+
+    padding: 7px;
+  }
+
+  .quick-nav__item i {
+    font-size: 19px;
+  }
+
+  .quick-nav__item span {
+    font-size: 9px;
+  }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+  .quick-nav-wrapper {
+    overflow: hidden;
+  }
+
+  .quick-nav {
+    display: flex;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    padding: 0 28px;
+  }
+
+  .quick-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .quick-nav__item {
+    flex: 0 0 110px;
+
+    min-height: 70px;
+
+    scroll-snap-align: start;
+
+    padding: 7px 6px;
+
+    border-right: 1px solid #eeeeee;
+  }
+
+  .quick-nav__item i {
+    font-size: 19px;
+  }
+
+  .quick-nav__item span {
+    font-size: 8px;
+  }
+
+
+  /* Flechas */
+
+  .quick-nav__arrow {
+    display: flex;
+  }
+}
+
+
+/* =================================
+   MOBILE PEQUEÑO
+================================= */
+
+@media (max-width: 450px) {
+
+  .quick-nav {
+    padding: 0 26px;
+  }
+
+  .quick-nav__item {
+    flex-basis: 105px;
+
+    min-height: 68px;
+  }
+
+  .quick-nav__arrow {
+    width: 28px;
+    height: 28px;
+
+    font-size: 19px;
+  }
+}

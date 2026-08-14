@@ -35,3 +35,22 @@ const siteHeader = document.querySelector(".site-header");
 mobileMenuToggle.addEventListener("click", () => {
   siteHeader.classList.toggle("mobile-menu-open");
 });
+
+const quickNav = document.querySelector(".quick-nav");
+
+const leftButton = document.querySelector(".quick-nav__arrow--left");
+const rightButton = document.querySelector(".quick-nav__arrow--right");
+
+rightButton.addEventListener("click", () => {
+  quickNav.scrollBy({
+    left: 220,
+    behavior: "smooth",
+  });
+});
+
+leftButton.addEventListener("click", () => {
+  quickNav.scrollBy({
+    left: -220,
+    behavior: "smooth",
+  });
+});
