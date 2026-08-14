@@ -282,7 +282,7 @@ Esto establece una continuidad natural en la navegación:
 
 | Antes                                              | Después                                                |
 | -------------------------------------------------- | ------------------------------------------------------ |
-| ![Antes](./img-readme/antes_informacion_general.png) | ![Después](./img-readme/despuesinformacion_general.png) |
+| ![Antes](./img-readme/antes_informacion_general.png) | ![Después](./img-readme/despues_informacion_general.png) |
 
 ---
 
