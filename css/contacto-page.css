@@ -1,0 +1,365 @@
+/* =========================================================
+   CONTACTO DECANATURA
+   ========================================================= */
+
+.contacto-intro {
+  margin: 42px 0;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.contacto-intro__eyebrow {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  color: var(--color-yellow);
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+.contacto-intro__title {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: var(--color-dark);
+}
+
+
+/* =========================================================
+   DIVISOR
+   ========================================================= */
+
+.contacto-intro__divider {
+  width: 70px;
+  height: 5px;
+
+  margin-top: 18px;
+  margin-bottom: 22px;
+
+  background: var(--color-yellow);
+
+  border-radius: 999px;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+   ========================================================= */
+
+.contacto-intro__lead {
+  max-width: 720px;
+
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: var(--color-text);
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.contacto-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.contacto-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  min-height: 190px;
+
+  padding: 30px;
+
+  background: var(--color-white);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.contacto-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #ddd9d0;
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   ICONO
+   ========================================================= */
+
+.contacto-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: var(--color-yellow-softer);
+
+  color: var(--color-yellow);
+
+  font-size: 1.6rem;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.contacto-card:hover .contacto-card__icon {
+  background: var(--color-yellow);
+
+  color: var(--color-white);
+
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.contacto-card__label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+
+  color: var(--color-yellow);
+}
+
+
+/* =========================================================
+   TÍTULO DE LA CARD
+   ========================================================= */
+
+.contacto-card h2 {
+  margin: 0 0 10px;
+
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+
+  color: var(--color-dark);
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.contacto-card p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.65;
+
+  color: var(--color-text-light);
+}
+
+
+/* =========================================================
+   CARD DESTACADA — CORREO
+   ========================================================= */
+
+.contacto-card--highlight {
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-yellow-softer),
+      var(--color-white)
+    );
+
+  border-color: var(--color-yellow-soft);
+}
+
+
+.contacto-card--highlight .contacto-card__icon {
+  background: var(--color-yellow);
+
+  color: var(--color-white);
+}
+
+
+/* =========================================================
+   ENLACE DE CORREO
+   ========================================================= */
+
+.contacto-card--highlight a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-top: 18px;
+
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
+
+  color: var(--color-yellow);
+
+  text-decoration: none;
+
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.contacto-card--highlight a i {
+  font-size: 1rem;
+
+  transition:
+    transform 0.2s ease;
+}
+
+
+.contacto-card--highlight a:hover {
+  gap: 10px;
+
+  color: #d99d00;
+}
+
+
+.contacto-card--highlight a:hover i {
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto-card {
+    min-height: auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .contacto-intro {
+    margin-bottom: 32px;
+  }
+
+  .contacto-intro__eyebrow {
+    font-size: 0.72rem;
+  }
+
+  .contacto-intro__title {
+    font-size: 1.9rem;
+  }
+
+  .contacto-intro__divider {
+    width: 55px;
+    height: 4px;
+
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+
+  .contacto-intro__lead {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .contacto-grid {
+    gap: 18px;
+  }
+
+  .contacto-card {
+    gap: 16px;
+
+    padding: 22px 20px;
+
+    border-radius: var(--radius-sm);
+  }
+
+  .contacto-card__icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 1.4rem;
+  }
+
+  .contacto-card__label {
+    font-size: 0.68rem;
+  }
+
+  .contacto-card h2 {
+    font-size: 1.18rem;
+  }
+
+  .contacto-card p {
+    font-size: 0.85rem;
+  }
+
+}

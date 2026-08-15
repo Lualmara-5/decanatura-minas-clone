@@ -3,9 +3,17 @@ const pages = document.querySelectorAll(".page");
 
 navItems.forEach((item) => {
   item.addEventListener("click", (event) => {
+    const href = item.getAttribute("href");
+
+    // Si es un enlace externo, dejamos que el navegador
+    // haga su comportamiento normal.
+    if (!href.startsWith("#")) {
+      return;
+    }
+
     event.preventDefault();
 
-    const target = item.getAttribute("href").substring(1);
+    const target = href.substring(1);
     const targetPage = document.getElementById(`page-${target}`);
 
     if (!targetPage) {
