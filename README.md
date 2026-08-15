@@ -25,6 +25,26 @@ El objetivo de la propuesta es **aprovechar el scroll como elemento narrativo**,
 
 ---
 
+## Diseño Responsive
+
+Toda la propuesta de rediseño fue desarrollada teniendo en cuenta diferentes tamaños de pantalla y dispositivos.
+
+La interfaz se adapta progresivamente a **escritorio, tablet y dispositivos móviles**, reorganizando los componentes y el contenido para mantener una experiencia de navegación consistente.
+
+Entre las adaptaciones consideradas se encuentran:
+
+* Reorganización de columnas y tarjetas.
+* Ajuste de tamaños tipográficos.
+* Adaptación de imágenes y elementos audiovisuales.
+* Reestructuración de la navegación para pantallas pequeñas.
+* Ajuste de espaciados y márgenes.
+* Distribución vertical de contenidos cuando el espacio horizontal es limitado.
+
+De esta manera, el rediseño no está pensado únicamente para una resolución específica, sino como una **interfaz responsive capaz de adaptarse al dispositivo desde el cual se consulta**.
+
+
+---
+
 ## Estructura del home original
 
 La página actual organiza la información en cinco accesos rápidos:
@@ -480,4 +500,162 @@ Esto permite mantener una interfaz coherente a medida que la iniciativa evolucio
 Por esta razón, la propuesta se enfoca principalmente en **la presentación, organización y jerarquía visual del contenido**, evitando modificar su sentido institucional.
 
 Esto permite modernizar la experiencia de usuario sin alterar la información que debe permanecer disponible para consulta.
+
+---
+
+# 4. Boletín desde la Decanatura
+
+## Diseño original
+
+![Diseño original - Boletín desde la Decanatura](./img-readme/antes_boletin_decanatura.png)
+
+La versión original ya presenta los boletines mediante una estructura de tarjetas, por lo que en esta sección el objetivo no fue realizar una transformación completa de la arquitectura del contenido.
+
+El principal punto de mejora identificado fue la **presentación de los contenidos audiovisuales**.
+
+Los videos ocupan una parte importante de esta sección, pero su visualización dentro de las tarjetas podía tener una mayor presencia y una relación más clara con la acción de reproducirlos.
+
+---
+
+## Propuesta de rediseño
+
+![Rediseño - Boletín desde la Decanatura](./img-readme/despues_boletin_decanatura.png)
+
+La propuesta mantiene la estructura de tarjetas, pero convierte el contenido audiovisual en el **elemento protagonista de cada boletín**.
+
+### ¿Qué se mejoró?
+
+* Se utilizan previews de mayor presencia visual.
+* Cada video cuenta con una representación clara de su acción de reproducción.
+* Se mantiene una estructura consistente entre todos los boletines.
+* La información complementaria se conserva debajo del contenido audiovisual.
+* Se mejora la separación entre la imagen, el título, la descripción y la acción.
+* Se facilita la identificación de los contenidos que pueden ser reproducidos.
+
+De esta manera, la sección conserva la simplicidad de la versión original, pero genera una experiencia más cercana a una **biblioteca audiovisual de contenidos institucionales**.
+
+> **El contenido audiovisual pasa de ser un elemento complementario a convertirse en el principal punto de entrada de cada boletín.**
+
+---
+
+## Comparación visual
+
+| Antes                                              | Después                                                |
+| -------------------------------------------------- | ------------------------------------------------------ |
+| ![Antes](./img-readme/antes_boletin_decanatura.png) | ![Después](./img-readme/despues_boletin_decanatura.png) |
+
+---
+
+# 5. Informes de Gestión
+
+La opción **Informes de Gestión** corresponde a una redirección hacia una página independiente del sitio institucional.
+
+Por este motivo, **no se realizó un rediseño de su contenido dentro de esta propuesta**.
+
+El acceso se mantiene dentro de la navegación principal para conservar la estructura y facilitar el acceso a esta información.
+
+---
+
+# 6. Contacto Decanatura
+
+## Nueva sección propuesta
+
+A diferencia de las secciones anteriores, **Contacto Decanatura no corresponde a una sección existente en la página original**.
+
+La información de contacto actualmente se encuentra dentro de **Decanatura Actual**, ubicada al final de dicha página.
+
+Aunque esta ubicación permite consultar la información, puede generar una dificultad para un usuario que ingresa al sitio con una intención específica, por ejemplo:
+
+> *"Necesito encontrar el correo o teléfono de la Decanatura."*
+
+En ese escenario, el usuario tendría que navegar hasta **Decanatura Actual** y recorrer su contenido hasta encontrar la información de contacto.
+
+### Propuesta
+
+Se incorpora un acceso directo denominado **Contacto Decanatura** dentro de la navegación secundaria.
+
+El objetivo no es duplicar innecesariamente la información, sino ofrecer un **punto de acceso directo** para los usuarios que llegan al sitio con una necesidad concreta de contacto.
+
+La información puede mantenerse centralizada y reutilizarse desde la sección correspondiente, evitando inconsistencias entre diferentes lugares del sitio.
+
+### Beneficio
+
+Esta propuesta aplica un principio sencillo de experiencia de usuario:
+
+> **La información que el usuario busca directamente debe poder encontrarse directamente.**
+
+Por ello, se considera conveniente mantener el contacto visible como una opción independiente dentro de la navegación.
+
+![Nuevo - Contacto Decanatura](./img-readme/nuevo_contacto_decanatura.png)
+
+---
+
+# Consideraciones generales del rediseño
+
+## Identidad institucional
+
+La propuesta mantiene como referencia los lineamientos visuales de la Universidad Nacional de Colombia, utilizando:
+
+* Colores institucionales.
+* Tipografía **Ancizar**.
+* Elementos gráficos y recursos visuales coherentes con la identidad institucional.
+* Iconografía para facilitar la identificación de contenidos.
+* Espaciado y jerarquía visual orientados a mejorar la lectura.
+
+El objetivo no es reemplazar la identidad visual existente, sino **aprovecharla dentro de una interfaz web más actual y organizada**.
+
+---
+
+## Navbar y Footer
+
+> **Nota:** La navegación superior y el footer no hacen parte del alcance del rediseño.
+
+Estos elementos fueron **simulados visualmente** dentro de la propuesta para representar el contexto completo de una página web y permitir visualizar cómo se integraría el nuevo diseño dentro del sitio institucional.
+
+La navegación y el footer actuales corresponden a elementos de carácter **global**, utilizados transversalmente por diferentes facultades y sedes de la Universidad Nacional de Colombia. Por esta razón, proponer modificaciones sobre estos componentes implicaría un alcance considerablemente mayor al solicitado para esta prueba.
+
+El rediseño se concentra exclusivamente en la **experiencia y presentación del contenido propio de la sección de Decanatura**.
+
+---
+
+# Conclusión
+
+La propuesta parte de una página institucional funcional y busca llevarla hacia una experiencia de navegación **más clara, visual y centrada en el usuario**, sin perder la información ni la identidad de la Universidad.
+
+A lo largo del rediseño se trabajaron diferentes tipos de contenido:
+
+* Información institucional.
+* Funciones y responsabilidades.
+* Líneas estratégicas.
+* Centros de Pensamiento.
+* Contenido audiovisual.
+* Información de contacto.
+
+Cada sección recibió un tratamiento acorde con la naturaleza de su contenido, evitando aplicar una única solución visual a toda la página.
+
+El principal cambio consiste en pasar de una experiencia donde gran parte de la información se presenta como **contenido documental**, a una experiencia donde la información puede ser **explorada, escaneada y comprendida progresivamente mediante el scroll**.
+
+Con esto se busca lograr una interfaz:
+
+**Más clara**
+La información se organiza mediante una jerarquía visual definida.
+
+**Más amigable**
+El contenido se presenta en bloques que facilitan la lectura y navegación.
+
+**Más moderna**
+Se incorporan tarjetas, iconografía, llamados a la acción y una composición visual más actual.
+
+**Más escaneable**
+El usuario puede identificar rápidamente títulos, categorías, funciones y acciones.
+
+**Más accesible**
+La información importante cuenta con puntos de acceso más directos.
+
+**Más escalable**
+La estructura permite incorporar nuevos contenidos manteniendo patrones visuales consistentes.
+
+En conjunto, considero que el rediseño permite conservar el carácter institucional de la página mientras mejora significativamente la manera en que los usuarios **encuentran, recorren y consumen la información**.
+
+> **El objetivo no fue simplemente cambiar la apariencia de la página, sino replantear cómo se presenta y se recorre su contenido.**
 
