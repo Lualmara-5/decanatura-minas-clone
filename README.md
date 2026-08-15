@@ -302,6 +302,181 @@ La principal mejora no consiste en reducir el contenido, sino en **transformar l
 
 En esta sección se mantuvo especial cuidado con el contenido institucional, ya que parte de la información corresponde a funciones y responsabilidades establecidas formalmente.
 
+---
+
+# 3. Centros de Pensamiento
+
+## Diseño original
+
+![Diseño original - Centros de Pensamiento](./assets/antes_centros_pensamiento.png)
+
+### Observaciones
+
+La versión original presenta la información de los Centros de Pensamiento principalmente mediante **bloques extensos de texto**, acompañados por títulos y listas consecutivas.
+
+Aunque permite consultar la información de cada centro, se identifican algunas oportunidades de mejora:
+
+* La introducción y la información de los centros se encuentran dentro de un **flujo de lectura principalmente textual**.
+* Los contenidos de cada Centro de Pensamiento tienen una estructura extensa y poco diferenciada visualmente.
+* El usuario debe leer varios párrafos para identificar rápidamente el **propósito, enfoque u objetivos** de cada centro.
+* La información de los diferentes centros no permite una **comparación visual inmediata**.
+* El menú lateral ocupa una parte importante del espacio disponible para el contenido.
+* El botón para acceder a los Centros de Pensamiento tiene un protagonismo que no aporta demasiado valor una vez el usuario ya se encuentra dentro de esta sección.
+
+El reto en este caso fue presentar información académica y estratégica sin reducir su profundidad, pero haciendo que su consulta fuera **más clara, visual y escaneable**.
+
+---
+
+## Propuesta de rediseño
+
+![Rediseño - Centros de Pensamiento](./assets/despues_centros_pensamiento.png)
+
+La propuesta reorganiza la sección en dos grandes momentos:
+
+1. **Contextualización:** explicar qué son los Centros de Pensamiento y cuál es su importancia.
+2. **Exploración:** presentar individualmente los centros que hacen parte de la iniciativa.
+
+De esta manera, el usuario primero comprende el concepto y posteriormente puede conocer cada centro.
+
+---
+
+### 1. Encabezado orientado al propósito
+
+La sección comienza con un encabezado de mayor presencia visual:
+
+> **Conocimiento que conecta la Facultad con el entorno**
+
+Este título busca comunicar en una sola frase el propósito general de los Centros de Pensamiento, acompañado de una breve descripción introductoria.
+
+En lugar de comenzar directamente con contenido técnico, se establece primero un **contexto conceptual** para el usuario.
+
+---
+
+### 2. ¿Qué son los Centros de Pensamiento?
+
+La información introductoria se reorganiza dentro de un bloque visual dividido en diferentes conceptos:
+
+* **Contexto:** definición de los Centros de Pensamiento.
+* **Transformación:** relación entre academia, Estado, sociedad y sectores productivos.
+* **Desde la Decanatura:** propósito de esta iniciativa dentro de la Facultad.
+
+Esta estructura permite separar conceptos que anteriormente se encontraban dentro de un flujo continuo de texto.
+
+El objetivo es que el usuario pueda **comprender la iniciativa sin tener que leer toda la página**.
+
+---
+
+### 3. Presentación individual de cada Centro
+
+Uno de los cambios principales consiste en transformar los centros en **componentes visuales independientes**.
+
+Cada Centro de Pensamiento cuenta ahora con:
+
+* Iconografía identificativa.
+* Nombre del centro.
+* Descripción general.
+* Propósito.
+* Líneas de acción.
+* Acceso para conocer el centro.
+
+Esto crea una estructura consistente que puede mantenerse incluso si en el futuro se incorporan nuevos Centros de Pensamiento.
+
+---
+
+### 4. Mayor diferenciación entre los centros
+
+En la versión original, los diferentes centros aparecen como grandes bloques de información similares entre sí.
+
+En el rediseño, cada centro se convierte en una **unidad visual claramente delimitada**, permitiendo identificar rápidamente dónde comienza y termina cada contenido.
+
+Además, la distribución en columnas separa la información descriptiva de la información estratégica:
+
+**Identidad y contexto**
+
+Nombre, descripción y enfoque del centro.
+
+**Propósito y líneas de acción**
+
+Información específica sobre sus objetivos y áreas de trabajo.
+
+Esta separación facilita la lectura y permite localizar rápidamente la información que interesa al usuario.
+
+---
+
+### 5. Información estratégica más escaneable
+
+Las líneas de acción dejan de presentarse únicamente como párrafos o listas extensas y pasan a representarse mediante **etiquetas visuales**.
+
+Por ejemplo:
+
+`Diálogo de saberes` · `Participación ciudadana` · `Conocimiento y territorio` · `Política pública` · `Innovación social`
+
+Este recurso permite identificar rápidamente las áreas de trabajo de cada centro sin necesidad de leer toda su descripción.
+
+---
+
+### 6. Acciones más claras
+
+Cada Centro de Pensamiento incorpora un acceso de tipo **"Conocer el centro"**, estableciendo una acción clara para el usuario.
+
+Esto permite que la página principal funcione como un **punto de exploración**, mientras que la información más detallada puede mantenerse en páginas específicas de cada centro.
+
+De esta manera se evita sobrecargar la página principal con toda la información disponible.
+
+---
+
+## ¿Qué se mejoró?
+
+| Antes                                            | Después                                            |
+| ------------------------------------------------ | -------------------------------------------------- |
+| Contenido predominantemente textual              | Contenido organizado visualmente                   |
+| Grandes bloques de información                   | Componentes independientes                         |
+| Difícil comparación entre centros                | Estructura consistente para cada centro            |
+| Propósito y objetivos mezclados con el contenido | Información agrupada por categorías                |
+| Listas y párrafos extensos                       | Etiquetas y bloques de información                 |
+| Menor jerarquía visual                           | Jerarquía clara entre contexto, centros y acciones |
+| Sidebar con gran protagonismo                    | Mayor aprovechamiento del área de contenido        |
+
+---
+
+## Comparación visual
+
+| Antes                                              | Después                                                |
+| -------------------------------------------------- | ------------------------------------------------------ |
+| ![Antes](./img-readme/antes_centros_pensamiento.png) | ![Después](./img-readme/despues_centros_pensamiento.png) |
+
+---
+
+## Resultado esperado
+
+El rediseño busca convertir la sección de **Centros de Pensamiento** en un espacio de exploración y no únicamente de consulta documental.
+
+La nueva estructura permite que el usuario pueda:
+
+1. Comprender qué son los Centros de Pensamiento.
+2. Conocer su relación con la Facultad y el entorno.
+3. Identificar rápidamente los centros disponibles.
+4. Entender el propósito de cada uno.
+5. Reconocer sus principales líneas de acción.
+6. Acceder a información más detallada cuando sea necesario.
+
+De esta forma, se conserva la profundidad del contenido institucional mientras se mejora su **jerarquía, legibilidad y capacidad de exploración**.
+
+> **De una página centrada en presentar información a una experiencia que permite descubrir y explorar los Centros de Pensamiento.**
+
+---
+
+## Criterio de escalabilidad
+
+La nueva estructura también permite que la sección pueda crecer de manera ordenada.
+
+Al utilizar una estructura visual consistente para cada Centro de Pensamiento, la incorporación de nuevos centros no requeriría modificar completamente el diseño de la página, sino **añadir nuevos componentes siguiendo el mismo patrón visual y de información**.
+
+Esto permite mantener una interfaz coherente a medida que la iniciativa evoluciona.
+
+---
+
+
 Por esta razón, la propuesta se enfoca principalmente en **la presentación, organización y jerarquía visual del contenido**, evitando modificar su sentido institucional.
 
 Esto permite modernizar la experiencia de usuario sin alterar la información que debe permanecer disponible para consulta.
