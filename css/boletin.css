@@ -1,0 +1,447 @@
+/* =========================================================
+   BOLETÍN DECANATURA
+   ========================================================= */
+
+.boletin-intro {
+    
+  margin: 42px 0px;
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+.boletin-intro__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.boletin-intro__title h1 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: var(--color-dark);
+}
+
+
+/* =========================================================
+   DIVISOR
+   ========================================================= */
+
+.boletin-intro__divider {
+  width: 100px;
+  height: 5px;
+
+  margin-top: 18px;
+  margin-bottom: 24px;
+
+  background: var(--color-yellow);
+
+  border-radius: 999px;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+   ========================================================= */
+
+.boletin-intro > p {
+  max-width: 1050px;
+
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: var(--color-text);
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.boletin-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 26px;
+  margin-bottom: 42px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.boletin-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: var(--color-white);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.boletin-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #ddd9d0;
+
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.09);
+}
+
+
+/* =========================================================
+   VIDEO / MINIATURA
+   ========================================================= */
+
+.boletin-card__video {
+  position: relative;
+
+  display: block;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background: #161616;
+
+  text-decoration: none;
+}
+
+.boletin-card__video img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.5s ease;
+}
+
+.boletin-card:hover .boletin-card__video img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.boletin-card__overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.05) 45%,
+      rgba(0, 0, 0, 0.65)
+    );
+}
+
+
+/* =========================================================
+   NÚMERO
+   ========================================================= */
+
+.boletin-card__number {
+  position: absolute;
+
+  top: 16px;
+  left: 16px;
+
+  padding: 7px 11px;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+
+  backdrop-filter: blur(4px);
+}
+
+
+/* =========================================================
+   PLAY
+   ========================================================= */
+
+.boletin-card__play {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  background: var(--color-yellow);
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 2rem;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.boletin-card:hover .boletin-card__play {
+  transform:
+    translate(-50%, -50%)
+    scale(1.1);
+
+  background: #ffffff;
+
+  color: var(--color-yellow);
+}
+
+.boletin-card__play i {
+  margin-left: 3px;
+}
+
+
+/* =========================================================
+   YOUTUBE
+   ========================================================= */
+
+.boletin-card__youtube {
+  position: absolute;
+
+  right: 16px;
+  bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+.boletin-card__youtube i {
+  font-size: 1.15rem;
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.boletin-card__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding: 24px 24px 22px;
+}
+
+
+.boletin-card__eyebrow {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+
+  color: var(--color-yellow);
+}
+
+
+.boletin-card__content h2 {
+  margin: 0 0 12px;
+
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+
+  color: var(--color-dark);
+}
+
+
+.boletin-card__content p {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.7;
+
+  color: var(--color-text);
+}
+
+
+/* =========================================================
+   LINK
+   ========================================================= */
+
+.boletin-card__link {
+  align-self: flex-start;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-top: 20px;
+
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  color: var(--color-yellow);
+
+  text-decoration: none;
+
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.boletin-card__link i {
+  font-size: 1rem;
+
+  transition:
+    transform 0.2s ease;
+}
+
+
+.boletin-card__link:hover {
+  gap: 10px;
+
+  color: #d99d00;
+}
+
+
+.boletin-card__link:hover i {
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .boletin-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .boletin-intro {
+    margin-bottom: 32px;
+  }
+
+  .boletin-intro__title {
+    gap: 7px;
+  }
+
+  .boletin-intro__square {
+    width: 15px;
+    height: 15px;
+  }
+
+  .boletin-intro__title h1 {
+    font-size: 1.9rem;
+  }
+
+  .boletin-intro__divider {
+    width: 75px;
+    height: 4px;
+
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+
+  .boletin-intro > p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .boletin-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .boletin-card__content {
+    padding: 21px 20px 20px;
+  }
+
+  .boletin-card__content h2 {
+    font-size: 1.25rem;
+  }
+
+  .boletin-card__content p {
+    font-size: 0.88rem;
+  }
+
+  .boletin-card__play {
+    width: 54px;
+    height: 54px;
+
+    font-size: 1.7rem;
+  }
+
+}
