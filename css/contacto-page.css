@@ -1,15 +1,12 @@
-/* =========================================================
+/* ========================================
    CONTACTO DECANATURA
-   ========================================================= */
+======================================== */
+
+/* INTRO */
 
 .contacto-intro {
   margin: 42px 0;
 }
-
-
-/* =========================================================
-   EYEBROW
-   ========================================================= */
 
 .contacto-intro__eyebrow {
   display: block;
@@ -24,11 +21,6 @@
   color: var(--color-yellow);
 }
 
-
-/* =========================================================
-   TÍTULO
-   ========================================================= */
-
 .contacto-intro__title {
   margin: 0;
 
@@ -39,11 +31,6 @@
 
   color: var(--color-dark);
 }
-
-
-/* =========================================================
-   DIVISOR
-   ========================================================= */
 
 .contacto-intro__divider {
   width: 70px;
@@ -56,11 +43,6 @@
 
   border-radius: 999px;
 }
-
-
-/* =========================================================
-   DESCRIPCIÓN
-   ========================================================= */
 
 .contacto-intro__lead {
   max-width: 720px;
@@ -75,28 +57,25 @@
 }
 
 
-/* =========================================================
-   GRID
-   ========================================================= */
+/* GRID */
 
 .contacto-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 24px;
+
   margin-bottom: 42px;
 }
 
 
-/* =========================================================
-   CARD
-   ========================================================= */
+/* CARDS */
 
 .contacto-card {
   display: flex;
   align-items: flex-start;
+
   gap: 20px;
 
   min-height: 190px;
@@ -117,7 +96,6 @@
     border-color 0.25s ease;
 }
 
-
 .contacto-card:hover {
   transform: translateY(-3px);
 
@@ -128,9 +106,7 @@
 }
 
 
-/* =========================================================
-   ICONO
-   ========================================================= */
+/* ICONO */
 
 .contacto-card__icon {
   display: flex;
@@ -156,7 +132,6 @@
     transform 0.25s ease;
 }
 
-
 .contacto-card:hover .contacto-card__icon {
   background: var(--color-yellow);
 
@@ -166,9 +141,7 @@
 }
 
 
-/* =========================================================
-   LABEL
-   ========================================================= */
+/* CONTENIDO */
 
 .contacto-card__label {
   display: block;
@@ -183,11 +156,6 @@
   color: var(--color-yellow);
 }
 
-
-/* =========================================================
-   TÍTULO DE LA CARD
-   ========================================================= */
-
 .contacto-card h2 {
   margin: 0 0 10px;
 
@@ -198,11 +166,6 @@
 
   color: var(--color-dark);
 }
-
-
-/* =========================================================
-   TEXTO
-   ========================================================= */
 
 .contacto-card p {
   margin: 0;
@@ -215,9 +178,7 @@
 }
 
 
-/* =========================================================
-   CARD DESTACADA — CORREO
-   ========================================================= */
+/* CORREO DESTACADO */
 
 .contacto-card--highlight {
   background:
@@ -230,21 +191,16 @@
   border-color: var(--color-yellow-soft);
 }
 
-
 .contacto-card--highlight .contacto-card__icon {
   background: var(--color-yellow);
 
   color: var(--color-white);
 }
 
-
-/* =========================================================
-   ENLACE DE CORREO
-   ========================================================= */
-
 .contacto-card--highlight a {
   display: inline-flex;
   align-items: center;
+
   gap: 7px;
 
   margin-top: 18px;
@@ -262,7 +218,6 @@
     color 0.2s ease;
 }
 
-
 .contacto-card--highlight a i {
   font-size: 1rem;
 
@@ -270,22 +225,22 @@
     transform 0.2s ease;
 }
 
-
 .contacto-card--highlight a:hover {
   gap: 10px;
 
   color: #d99d00;
 }
 
-
 .contacto-card--highlight a:hover i {
   transform: translateX(3px);
 }
 
 
-/* =========================================================
-   TABLET
-   ========================================================= */
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+/* TABLET */
 
 @media (max-width: 850px) {
 
@@ -296,13 +251,10 @@
   .contacto-card {
     min-height: auto;
   }
-
 }
 
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+/* MOBILE */
 
 @media (max-width: 600px) {
 
@@ -361,5 +313,4 @@
   .contacto-card p {
     font-size: 0.85rem;
   }
-
 }
