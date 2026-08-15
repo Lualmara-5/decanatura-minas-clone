@@ -308,7 +308,7 @@ En esta sección se mantuvo especial cuidado con el contenido institucional, ya 
 
 ## Diseño original
 
-![Diseño original - Centros de Pensamiento](./assets/antes_centros_pensamiento.png)
+![Diseño original - Centros de Pensamiento](./img-readme/antes_centros_pensamiento.png)
 
 ### Observaciones
 
@@ -329,7 +329,7 @@ El reto en este caso fue presentar información académica y estratégica sin re
 
 ## Propuesta de rediseño
 
-![Rediseño - Centros de Pensamiento](./assets/despues_centros_pensamiento.png)
+![Rediseño - Centros de Pensamiento](./img-readme/despues_centros_pensamiento.png)
 
 La propuesta reorganiza la sección en dos grandes momentos:
 
